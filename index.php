@@ -3,7 +3,6 @@
   <head>
     <meta charset="utf-8" />
     <title>phpCaptcha</title>
-    <script defer src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <script defer type="text/javascript" src="js/config.js"></script>
     <script defer type="text/javascript" src="js/functions.js"></script>
