@@ -1,0 +1,25 @@
+{
+  "name": "phpcaptcha",
+  "version": "1.0.0",
+  "description": "'Captcha php Jquery one page'",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fedomkf1/phpCaptcha.git"
+  },
+  "keywords": [
+    "php",
+    "captcha",
+    "osp",
+    "jquery"
+  ],
+  "author": "Federico Peralta",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fedomkf1/phpCaptcha/issues"
+  },
+  "homepage": "https://github.com/fedomkf1/phpCaptcha#readme"
+}
