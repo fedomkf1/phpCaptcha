@@ -1,74 +1,30 @@
-<div class="text-center m-t-4">
-    <body onload="createCaptcha()">
-      <form onsubmit="validateCaptcha()">
-        <div id="captcha">
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <title>phpCaptcha</title>
+    <script defer src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script defer type="text/javascript" src="js/config.js"></script>
+    <script defer type="text/javascript" src="js/functions.js"></script>
+  </head>
+  <body>  
+    <h1><center>phpCaptcha</center></h1>
+    <section>
+      <center>
+        <div class="text-center m-t-8">
+          <body onload="createCaptcha()">
+            <form onsubmit="validateCaptcha()">
+              <div id="captcha">
+              </div>
+              <input type="text" placeholder="Ingrese el codigo para validar" id="cpatchaTextBox"/>
+              <button class="btn-primary" type="submit">Enviar</button>
+              <div id="message">
+              </div>
+            </form>
+          </body>
         </div>
-        <input type="text" placeholder="Completar para ver detalle" id="cpatchaTextBox"/>
-        <button class="btn-primary" type="submit">Enviar</button>
-      </form>
-    </body>
-</div>
-
-<style type="text/css">
-    input[type=text] {
-    padding: 12px 20px;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-}
-button{
-  background-color: #4CAF50;
-    border: none;
-    color: white;
-    padding: 12px 30px;
-    text-decoration: none;
-    margin: 4px 2px;
-    cursor: pointer;
-}
-canvas{
-  /*prevent interaction with the canvas*/
-  pointer-events:none;
-}
-</style>
-
-
-<script type="text/javascript">
-    
-var code;
-function createCaptcha() {
-  //clear the contents of captcha div first 
-  document.getElementById('captcha').innerHTML = "";
-  var charsArray =
-  "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ@!#$%^&*";
-  var lengthOtp = 6;
-  var captcha = [];
-  for (var i = 0; i < lengthOtp; i++) {
-    //below code will not allow Repetition of Characters
-    var index = Math.floor(Math.random() * charsArray.length + 1); //get the next character from the array
-    if (captcha.indexOf(charsArray[index]) == -1)
-      captcha.push(charsArray[index]);
-    else i--;
-  }
-  var canv = document.createElement("canvas");
-  canv.id = "captcha";
-  canv.width = 100;
-  canv.height = 50;
-  var ctx = canv.getContext("2d");
-  ctx.font = "25px Georgia";
-  ctx.strokeText(captcha.join(""), 0, 30);
-  //storing captcha so that can validate you can save it somewhere else according to your specific requirements
-  code = captcha.join("");
-  document.getElementById("captcha").appendChild(canv); // adds the canvas to the body element
-}
-function validateCaptcha() {
-  event.preventDefault();
-  debugger
-  if (document.getElementById("cpatchaTextBox").value == code) {
-    alert("Valid Captcha")
-  }else{
-    alert("Invalid Captcha. try Again");
-    createCaptcha();
-  }
-}
-</script>
+      </center>
+    </section>
+  </body>
+</html>
