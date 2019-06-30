@@ -18,7 +18,7 @@ var shaCode = {
 	all : "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ@!#$%^&*",
 }
 
-var charsCode = shaCode.num;
+var charsCode = shaCode.all;
 
 var contx = {
 	font : "25px Arial",

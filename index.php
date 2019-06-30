@@ -8,7 +8,7 @@
     <script defer type="text/javascript" src="js/functions.js"></script>
   </head>
   <body>  
-    <h1><center>phpCaptcha</center></h1>
+    <header><h1><center>phpCaptcha</center></h1></header>
     <section>
       <center>
         <div class="text-center m-t-8">
@@ -26,4 +26,7 @@
       </center>
     </section>
   </body>
+  <footer>
+    <center><a id="footerLink" target="_blank" href="https://fedeapp.com">© 2019 fedeapp.com</a></center>
+  </footer>
 </html>

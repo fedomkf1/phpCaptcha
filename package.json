@@ -1,6 +1,6 @@
 {
   "name": "phpcaptcha",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "'Captcha php Jquery one page'",
   "main": "index.js",
   "scripts": {
