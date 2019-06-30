@@ -1,7 +1,14 @@
 # phpCaptcha
 php simple onePage Captcha
 
-### Use:
+#### Config
+
+The config file is in 
+
+```/js/config.js```
+
+
+#### Technologies:
 
 * php
 * html
