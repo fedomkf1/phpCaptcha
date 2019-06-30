@@ -1,17 +1,33 @@
 # phpCaptcha
-php simple onePage Captcha
 
-#### Config
+php simple Captcha
 
-The config file is in 
+#### Requerimientos
 
-```/js/config.js```
+* [lamp](https://bitnami.com/stack/lamp/installer)
+* [nodejs](https://nodejs.org/es/)
+* [npm](https://www.npmjs.com/)
 
 
-#### Technologies:
+#### Instalacion
 
-* php
-* html
-* node
-* js
-* css
+```
+
+npm i phpCaptcha
+
+```
+#### Configuracion
+
+Se pueden configurar 
+* colores
+* largo Captcha
+* combinacion de caracteres a utilizar
+* letra a utilizar
+
+Esto se puede hacer desde el archivo:
+
+```
+
+/js/config.js
+
+```

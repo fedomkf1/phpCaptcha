@@ -7,7 +7,7 @@ input[type=text] {
     width: 200px;
 }
 button{
-  background-color: #4CAF50;
+    background-color: #4CAF50;
     border: none;
     color: white;
     padding: 12px 30px;
